@@ -1,5 +1,6 @@
-export default function renderScreen(screen, state, requestAnimationFrame) {
+export default function renderScreen(screen, game, requestAnimationFrame) {
   const context = screen.getContext('2d');
+  const { state } = game;
 
   context.clearRect(0, 0, 10, 10);
 
@@ -18,6 +19,6 @@ export default function renderScreen(screen, state, requestAnimationFrame) {
   }
 
   requestAnimationFrame(() => {
-    renderScreen(screen, state, requestAnimationFrame)
+    renderScreen(screen, game, requestAnimationFrame)
   });
 }
