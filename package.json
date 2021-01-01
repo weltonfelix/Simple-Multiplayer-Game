@@ -4,7 +4,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "start": "node server.js"
   },
   "repository": "git@github.com:weltonfelix/Simple-Multiplayer-Game.git",
   "author": "Welton Felix <contato.weltonf@gmail.com>",
